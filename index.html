@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Elena Rostova | Psicología Clínicas & Bienestar</title>
+    <title>Dra. Yiyi Granados | Psicología Clínica & Bienestar</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -50,7 +50,6 @@
         .font-serif {
             font-family: 'Playfair Display', serif;
         }
-        /* Glassmorphism custom */
         .glass-card {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
@@ -67,20 +66,20 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-sage-200 selection:text-sage-800">
 
-    <!-- Navbar / Header Flotante Mobile/Desktop -->
+    <!-- Header Flotante -->
     <header class="sticky top-0 z-40 w-full glass-card border-b border-stone-200/50 shadow-sm transition-all duration-300">
         <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="relative">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" 
-                         alt="Dra. Elena Rostova" 
+                         alt="Dra. Yiyi Granados" 
                          class="w-11 h-11 rounded-full object-cover border-2 border-sage-500 shadow-sm"
-                         onerror="this.src='https://placehold.co/100x100/698769/ffffff?text=ER'">
+                         onerror="this.src='https://placehold.co/100x100/698769/ffffff?text=YG'">
                     <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>
                 </div>
                 <div>
-                    <h1 class="font-serif font-semibold text-lg text-stone-800 leading-tight">Dra. Elena Rostova</h1>
-                    <p class="text-xs text-sage-700 font-medium">Psicóloga Clínica • M.N. 48.291</p>
+                    <h1 class="font-serif font-semibold text-lg text-stone-800 leading-tight">Dra. Yiyi Granados</h1>
+                    <p class="text-xs text-sage-700 font-medium">Psicóloga Clínica</p>
                 </div>
             </div>
             
@@ -94,15 +93,15 @@
 
     <main class="flex-grow max-w-4xl w-full mx-auto px-4 py-6 space-y-10">
 
-        <!-- 1. HERO & PRESENTACIÓN COMPLETA -->
+        <!-- 1. HERO & PRESENTACIÓN -->
         <section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sage-100/80 via-sand/30 to-terracotta-100/50 p-6 sm:p-10 shadow-sm border border-stone-200/60">
             <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                 <div class="relative flex-shrink-0">
                     <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-3xl overflow-hidden shadow-xl border-4 border-white rotate-2 transform hover:rotate-0 transition-transform duration-300">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" 
-                             alt="Dra. Elena Rostova" 
+                             alt="Dra. Yiyi Granados" 
                              class="w-full h-full object-cover"
-                             onerror="this.src='https://placehold.co/400x400/698769/ffffff?text=Elena+Rostova'">
+                             onerror="this.src='https://placehold.co/400x400/698769/ffffff?text=Yiyi+Granados'">
                     </div>
                     <div class="absolute -bottom-2 -right-2 bg-white px-3 py-1 rounded-full shadow-md text-xs font-semibold text-stone-700 flex items-center gap-1">
                         <i class="ph-fill ph-star text-amber-400"></i> 4.9 (120+ reseñas)
@@ -142,7 +141,7 @@
             </div>
         </section>
 
-        <!-- 2. SECCIÓN DE AGENDAMIENTO INTERACTIVO -->
+        <!-- 2. SECCIÓN DE AGENDAMIENTO -->
         <section id="agendamiento" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-stone-200/80 space-y-6">
             <div class="text-center max-w-lg mx-auto space-y-2">
                 <span class="text-xs uppercase tracking-widest text-sage-600 font-bold">Reserva en Tiempo Real</span>
@@ -150,7 +149,6 @@
                 <p class="text-stone-500 text-sm">Selecciona la modalidad, fecha y horario que mejor se adapten a tu rutina.</p>
             </div>
 
-            <!-- Paso 1: Selección de Modalidad -->
             <div class="space-y-3">
                 <label class="block text-xs font-bold text-stone-500 uppercase tracking-wider">1. Selecciona la Modalidad</label>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -188,9 +186,7 @@
                 </div>
             </div>
 
-            <!-- Paso 2: Selección de Fecha y Hora -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                <!-- Selector de Fecha Simulado/Calendario -->
                 <div class="space-y-3">
                     <label class="block text-xs font-bold text-stone-500 uppercase tracking-wider">2. Elige el Día</label>
                     <div class="bg-stone-50 rounded-2xl p-4 border border-stone-200">
@@ -204,37 +200,31 @@
                         <div class="grid grid-cols-7 gap-1 text-center text-xs text-stone-400 font-medium mb-2">
                             <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
                         </div>
-                        <div class="grid grid-cols-7 gap-1.5 text-xs text-center" id="diasGrid">
-                            <!-- JS insertará los días dinámicamente -->
-                        </div>
+                        <div class="grid grid-cols-7 gap-1.5 text-xs text-center" id="diasGrid"></div>
                     </div>
                 </div>
 
-                <!-- Horarios Disponibles -->
                 <div class="space-y-3">
                     <label class="block text-xs font-bold text-stone-500 uppercase tracking-wider">3. Horarios Disponibles</label>
-                    <div id="horariosContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-2 max-h-[220px] overflow-y-auto pr-1">
-                        <!-- JS generará horas disponibles -->
-                    </div>
+                    <div id="horariosContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-2 max-h-[220px] overflow-y-auto pr-1"></div>
                     <p class="text-[11px] text-stone-400 flex items-center gap-1 pt-1">
                         <i class="ph ph-clock"></i> Zona horaria: GMT-4 (Hora Local)
                     </p>
                 </div>
             </div>
 
-            <!-- Paso 3: Formulario Datos del Paciente -->
             <form id="bookingForm" onsubmit="confirmarAgendamiento(event)" class="space-y-4 pt-4 border-t border-stone-100">
                 <label class="block text-xs font-bold text-stone-500 uppercase tracking-wider">4. Tus Datos para la Reserva</label>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-medium text-stone-700 mb-1">Nombre Completo *</label>
-                        <input type="text" id="inputNombre" required placeholder="Ej. Camila Morales" 
+                        <input type="text" id="inputNombre" required placeholder="Ej. María Pérez" 
                                class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-sage-500 focus:border-sage-500 outline-none transition text-sm">
                     </div>
                     <div>
                         <label class="block text-xs font-medium text-stone-700 mb-1">Correo Electrónico *</label>
-                        <input type="email" id="inputEmail" required placeholder="camila@ejemplo.com" 
+                        <input type="email" id="inputEmail" required placeholder="maria@ejemplo.com" 
                                class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-sage-500 focus:border-sage-500 outline-none transition text-sm">
                     </div>
                 </div>
@@ -242,7 +232,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-medium text-stone-700 mb-1">Teléfono / WhatsApp *</label>
-                        <input type="tel" id="inputTelefono" required placeholder="+54 9 11 2345-6789" 
+                        <input type="tel" id="inputTelefono" required placeholder="+58 414 120-5483" 
                                class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-sage-500 focus:border-sage-500 outline-none transition text-sm">
                     </div>
                     <div>
@@ -252,7 +242,7 @@
                             <option value="Desarrollo Personal">Desarrollo Personal & Autoestima</option>
                             <option value="Duelo o Pérdida">Duelo o Pérdida</option>
                             <option value="Terapia de Pareja">Relaciones y Vínculos</option>
-                            <option value="Primera Consulta / Diagnóstico">Primera Consulta / Evaluación</option>
+                            <option value="Primera Consulta / Evaluación">Primera Consulta / Evaluación</option>
                             <option value="Otro">Otro motivo</option>
                         </select>
                     </div>
@@ -268,7 +258,7 @@
             </form>
         </section>
 
-        <!-- MODAL DE CONFIRMACIÓN DE CITA -->
+        <!-- MODAL CONFIRMACIÓN -->
         <div id="modalConfirmacion" class="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
             <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-stone-100 text-center space-y-5 animate-in fade-in zoom-in duration-200">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl">
@@ -277,10 +267,9 @@
 
                 <div>
                     <h3 class="font-serif text-2xl font-bold text-stone-800">¡Cita Agendada con Éxito!</h3>
-                    <p class="text-stone-500 text-xs mt-1">Hemos registrado tus datos y enviado un correo de confirmación.</p>
+                    <p class="text-stone-500 text-xs mt-1">Hemos registrado tus datos para la consulta.</p>
                 </div>
 
-                <!-- Resumen de Cita -->
                 <div class="bg-stone-50 rounded-2xl p-4 text-left text-xs space-y-2.5 border border-stone-200/80">
                     <div class="flex justify-between items-center pb-2 border-b border-stone-200">
                         <span class="text-stone-400">Modalidad:</span>
@@ -292,15 +281,14 @@
                     </div>
                     <div class="flex justify-between items-center pb-2 border-b border-stone-200">
                         <span class="text-stone-400">Paciente:</span>
-                        <span id="resPaciente" class="font-bold text-stone-700">Camila Morales</span>
+                        <span id="resPaciente" class="font-bold text-stone-700">María Pérez</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-stone-400">Contacto:</span>
-                        <span id="resContacto" class="font-bold text-stone-700">camila@ejemplo.com</span>
+                        <span id="resContacto" class="font-bold text-stone-700">maria@ejemplo.com</span>
                     </div>
                 </div>
 
-                <!-- Botones de Acción Posterior -->
                 <div class="space-y-2 pt-2">
                     <button onclick="addToCalendar()" 
                             class="w-full bg-stone-800 hover:bg-stone-900 text-white font-medium py-3 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
@@ -323,8 +311,7 @@
                     <span class="text-xs uppercase tracking-widest text-terracotta-600 font-bold">Atención Presencial</span>
                     <h3 class="font-serif text-2xl font-bold text-stone-800">Ubicación y Horarios</h3>
                 </div>
-                <!-- Botón de WhatsApp Directo -->
-                <a href="https://wa.me/5491100000000?text=Hola%20Dra.%20Elena,%20quisiera%20consultar%20sobre%20disponibilidad%20de%20turnos." 
+                <a href="https://wa.me/584141205483?text=Hola%20Dra.%20Yiyi,%20quisiera%20consultar%20sobre%20disponibilidad%20de%20turnos." 
                    target="_blank" 
                    class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold shadow-md transition active:scale-95">
                     <i class="ph-bold ph-whatsapp-logo text-lg"></i>
@@ -333,7 +320,6 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-                <!-- Información textual -->
                 <div class="lg:col-span-5 space-y-5 flex flex-col justify-between">
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
@@ -343,8 +329,8 @@
                             <div>
                                 <h4 class="font-semibold text-stone-800 text-sm">Dirección del Consultorio</h4>
                                 <p class="text-stone-600 text-xs sm:text-sm mt-0.5 leading-relaxed">
-                                    Av. Libertador 2440, Piso 4, Oficina B<br>
-                                    Recoleta / Palermo, Ciudad de Buenos Aires
+                                    Consultorio Privado<br>
+                                    Atención Presencial y Online
                                 </p>
                             </div>
                         </div>
@@ -369,14 +355,12 @@
                             <div>
                                 <h4 class="font-semibold text-stone-800 text-sm">Contacto Directo</h4>
                                 <p class="text-stone-600 text-xs sm:text-sm mt-0.5">
-                                    contacto@draelenarostova.com<br>
-                                    Tel: +54 (11) 4892-0000
+                                    WhatsApp / Tel: +58 414-1205483
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Accesos rápidos a GPS -->
                     <div class="pt-2 flex gap-2">
                         <a href="https://maps.google.com" target="_blank" class="flex-1 bg-stone-100 hover:bg-stone-200 text-stone-700 py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition">
                             <i class="ph-bold ph-google-logo text-base text-blue-600"></i> Google Maps
@@ -387,26 +371,19 @@
                     </div>
                 </div>
 
-                <!-- Mapa interactivo / Simulación estilizada -->
                 <div class="lg:col-span-7 relative min-h-[240px] rounded-2xl overflow-hidden border border-stone-200 shadow-inner group">
-                    <!-- Mapa embebido de OpenStreetMap libre de API keys -->
                     <iframe 
                         title="Ubicación Consultorio"
                         class="w-full h-full min-h-[260px] border-0 filter grayscale contrast-125 opacity-90 group-hover:grayscale-0 transition-all duration-500"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=-58.4050%2C-34.5880%2C-58.3850%2C-34.5750&amp;layer=mapnik&amp;marker=-34.5815%2C-58.3950" 
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-66.9200%2C10.4700%2C-66.8500%2C10.5100&amp;layer=mapnik" 
                         loading="lazy">
                     </iframe>
-                    
-                    <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3 py-2 rounded-xl shadow-md border border-stone-200 text-xs flex items-center gap-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <span class="font-medium text-stone-700">Estacionamiento medido y cocheras cerca</span>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. SECCIÓN REDES SOCIALES (INSTAGRAM & TIKTOK) -->
-        <section class="space-y-4">
+        <!-- 4. SECCIÓN REDES SOCIALES -->
+        <section class="space-y-4" id="redes">
             <div class="text-center space-y-1">
                 <span class="text-xs uppercase tracking-widest text-sage-600 font-bold">Comunidad & Divulgación</span>
                 <h3 class="font-serif text-2xl font-bold text-stone-800">Contenido en Redes Sociales</h3>
@@ -414,51 +391,41 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Instagram Card & Feed Simulado -->
+                <!-- Instagram Card -->
                 <div class="bg-white rounded-3xl p-5 border border-stone-200/80 shadow-sm flex flex-col justify-between space-y-4 hover:border-pink-300 transition">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2.5">
                             <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5">
                                 <div class="w-full h-full bg-white rounded-full p-0.5">
-                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100" class="w-full h-full rounded-full object-cover" alt="IG avatar">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100" class="w-full h-full rounded-full object-cover" alt="Instagram Avatar">
                                 </div>
                             </div>
                             <div>
-                                <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psi.elenarostova</h4>
-                                <p class="text-[11px] text-stone-400">48.5K seguidores • Instagram</p>
+                                <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psicoyiyigranados</h4>
+                                <p class="text-[11px] text-stone-400">Instagram Oficial</p>
                             </div>
                         </div>
-                        <a href="https://instagram.com" target="_blank" class="bg-gradient-to-r from-rose-500 to-purple-600 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm hover:opacity-90 transition">
+                        <a href="https://www.instagram.com/psicoyiyigranados" target="_blank" class="bg-gradient-to-r from-rose-500 to-purple-600 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm hover:opacity-90 transition">
                             Seguir
                         </a>
                     </div>
 
-                    <!-- Mini Grid Simulada Instagram -->
                     <div class="grid grid-cols-3 gap-2">
                         <div class="aspect-square bg-stone-100 rounded-xl overflow-hidden relative group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=200" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="post">
-                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1">
-                                <i class="ph-fill ph-heart"></i> 1.2k
-                            </div>
                         </div>
                         <div class="aspect-square bg-stone-100 rounded-xl overflow-hidden relative group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=200" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="post">
-                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1">
-                                <i class="ph-fill ph-heart"></i> 2.4k
-                            </div>
                         </div>
                         <div class="aspect-square bg-stone-100 rounded-xl overflow-hidden relative group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=200" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="post">
-                            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1">
-                                <i class="ph-fill ph-heart"></i> 980
-                            </div>
                         </div>
                     </div>
 
-                    <p class="text-xs text-stone-500 italic text-center">"3 claves para frenar el pensamiento rumiante antes de dormir 🌙"</p>
+                    <p class="text-xs text-stone-500 italic text-center">"Herramientas y reflexiones para tu salud mental."</p>
                 </div>
 
-                <!-- TikTok Card & Video Simulado -->
+                <!-- TikTok Card -->
                 <div class="bg-white rounded-3xl p-5 border border-stone-200/80 shadow-sm flex flex-col justify-between space-y-4 hover:border-stone-800 transition">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2.5">
@@ -466,23 +433,21 @@
                                 <i class="ph-bold ph-tiktok-logo"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psicologia.elena</h4>
-                                <p class="text-[11px] text-stone-400">120.2K seguidores • TikTok</p>
+                                <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psicoyiyigranados</h4>
+                                <p class="text-[11px] text-stone-400">TikTok Oficial</p>
                             </div>
                         </div>
-                        <a href="https://tiktok.com" target="_blank" class="bg-stone-900 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm hover:bg-stone-800 transition">
+                        <a href="https://www.tiktok.com/@psicoyiyigranados" target="_blank" class="bg-stone-900 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm hover:bg-stone-800 transition">
                             Seguir
                         </a>
                     </div>
 
-                    <!-- Video Preview Simulado -->
                     <div class="relative bg-stone-900 h-28 rounded-2xl overflow-hidden flex items-center justify-between p-4 text-white group cursor-pointer">
                         <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition duration-300" alt="TikTok preview">
                         
                         <div class="relative z-10 space-y-1">
-                            <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">VIRAL</span>
-                            <p class="text-xs font-semibold leading-tight max-w-[200px]">¿Qué es el apego ansioso y cómo identificarlo?</p>
-                            <span class="text-[10px] text-stone-300">▶ 450.5K reproducciones</span>
+                            <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">DESTACADO</span>
+                            <p class="text-xs font-semibold leading-tight max-w-[200px]">Consejos prácticos de psicología</p>
                         </div>
 
                         <div class="relative z-10 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-xl group-hover:scale-110 transition">
@@ -490,18 +455,18 @@
                         </div>
                     </div>
 
-                    <p class="text-xs text-stone-500 italic text-center">"Reflexiones cortas e información basada en ciencia todas las semanas."</p>
+                    <p class="text-xs text-stone-500 italic text-center">"Videos cortos sobre desarrollo personal e introspección."</p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER ELEGANTE Y COMPACTO -->
+    <!-- FOOTER -->
     <footer class="mt-12 bg-stone-900 text-stone-300 py-8 px-4 text-center text-xs border-t border-stone-800">
         <div class="max-w-4xl mx-auto space-y-4">
             <div class="flex items-center justify-center gap-2 text-stone-100 font-serif text-base">
-                <span>Dra. Elena Rostova</span>
+                <span>Dra. Yiyi Granados</span>
                 <span>•</span>
                 <span class="text-xs font-sans text-sage-400">Psicología Clínica</span>
             </div>
@@ -511,21 +476,19 @@
             </p>
 
             <div class="pt-2 text-stone-500 text-[11px]">
-                © <span id="yearSpan"></span> Dra. Elena Rostova. Todos los derechos reservados.
+                © <span id="yearSpan"></span> Dra. Yiyi Granados. Todos los derechos reservados.
             </div>
         </div>
     </footer>
 
-    <!-- LÓGICA INTERACTIVA EN JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
     <script>
-        // Estado global de la reserva
         const bookingState = {
-            modalidad: 'online', // 'online' | 'presencial'
+            modalidad: 'online',
             fecha: null,
             hora: null
         };
 
-        // Días de la semana para renderizado dinámico
         const diasDisponibles = [
             { dia: 10, diaSemana: 'Mar', disponible: true },
             { dia: 11, diaSemana: 'Mié', disponible: true },
@@ -542,18 +505,14 @@
 
         const horasBase = ['09:00', '10:30', '14:00', '15:30', '17:00', '18:15'];
 
-        // Inicialización al cargar la página
         window.addEventListener('DOMContentLoaded', () => {
             document.getElementById('yearSpan').textContent = new Date().getFullYear();
             renderCalendar();
-            // Seleccionar por defecto el primer día disponible
             selectDia(12);
         });
 
-        // Cambiar entre modalidad Online y Presencial
         function selectModalidad(tipo) {
             bookingState.modalidad = tipo;
-            
             const btnOnline = document.getElementById('btnModalidadOnline');
             const btnPresencial = document.getElementById('btnModalidadPresencial');
 
@@ -566,12 +525,10 @@
             }
         }
 
-        // Renderizar Días del Mes
         function renderCalendar() {
             const container = document.getElementById('diasGrid');
             container.innerHTML = '';
 
-            // Espacios vacíos iniciales para alinear el calendario (simulación)
             for(let i=0; i<1; i++){
                 const empty = document.createElement('div');
                 container.appendChild(empty);
@@ -602,26 +559,22 @@
             });
         }
 
-        // Selección de Día
         function selectDia(dia) {
             bookingState.fecha = dia;
             renderCalendar();
             renderHorarios();
         }
 
-        // Renderizar Horarios Disponibles para la Fecha
         function renderHorarios() {
             const container = document.getElementById('horariosContainer');
             container.innerHTML = '';
 
-            // Simular variación aleatoria leve según el día
             const horas = horasBase.filter((_, idx) => (bookingState.fecha + idx) % 2 === 0 || idx < 4);
 
             horas.forEach((hora, index) => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 
-                // Si no hay hora seleccionada, seleccionar la primera por defecto
                 if (!bookingState.hora && index === 0) bookingState.hora = hora;
 
                 const isSelected = bookingState.hora === hora;
@@ -638,47 +591,46 @@
             });
         }
 
-        // Selección de Hora
         function selectHora(hora) {
             bookingState.hora = hora;
             renderHorarios();
         }
 
-        // Confirmar Agendamiento
         function confirmarAgendamiento(event) {
             event.preventDefault();
 
             const nombre = document.getElementById('inputNombre').value.trim();
             const email = document.getElementById('inputEmail').value.trim();
             const telefono = document.getElementById('inputTelefono').value.trim();
+            const motivo = document.getElementById('selectMotivo').value;
 
             if(!nombre || !email || !telefono) {
                 alert('Por favor completa todos los campos requeridos.');
                 return;
             }
 
-            // Actualizar datos en el Modal
             const modalidadTexto = bookingState.modalidad === 'online' ? 'Online (Google Meet) 🌐' : 'Presencial (Consultorio) 📍';
             document.getElementById('resModalidad').textContent = modalidadTexto;
             document.getElementById('resFechaHora').textContent = `${bookingState.fecha} de Noviembre - ${bookingState.hora} hs`;
             document.getElementById('resPaciente').textContent = nombre;
             document.getElementById('resContacto').textContent = email;
 
-            // Mostrar Modal
             document.getElementById('modalConfirmacion').classList.remove('hidden');
+
+            // Abrir enlace a WhatsApp con los datos del agendamiento cargados
+            const mensajeWS = `Hola Dra. Yiyi, quiero agendar una consulta:\n- Modalidad: ${bookingState.modalidad}\n- Fecha/Hora: Día ${bookingState.fecha} - ${bookingState.hora} hs\n- Nombre: ${nombre}\n- Correo: ${email}\n- Teléfono: ${telefono}\n- Motivo: ${motivo}`;
+            window.open(`https://wa.me/584141205483?text=${encodeURIComponent(mensajeWS)}`, '_blank');
         }
 
         function cerrarModal() {
             document.getElementById('modalConfirmacion').classList.add('hidden');
         }
 
-        // Añadir evento a Google Calendar (Simulado dinámico)
         function addToCalendar() {
-            const titulo = encodeURIComponent("Consulta Psicológica con Dra. Elena Rostova");
+            const titulo = encodeURIComponent("Consulta Psicológica con Dra. Yiyi Granados");
             const detalles = encodeURIComponent(`Modalidad: ${bookingState.modalidad.toUpperCase()}\nPaciente registrado.`);
-            const ubicacion = encodeURIComponent(bookingState.modalidad === 'online' ? 'Google Meet (Enlace en tu email)' : 'Av. Libertador 2440, CABA');
+            const ubicacion = encodeURIComponent(bookingState.modalidad === 'online' ? 'Google Meet' : 'Consultorio Presencial');
             
-            // Fecha aproximada formato ISO
             const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${titulo}&details=${detalles}&location=${ubicacion}`;
             window.open(calendarUrl, '_blank');
         }

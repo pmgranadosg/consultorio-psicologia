@@ -43,7 +43,6 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Scripts oficiales de Widgets de Redes Sociales -->
     <script async src="//www.instagram.com/embed.js"></script>
-    <script async src="https://www.tiktok.com/embed.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -242,79 +241,80 @@
                         src="https://www.openstreetmap.org/export/embed.html?bbox=-66.85700%2C10.49100%2C-66.85290%2C10.49510&amp;layer=mapnik&amp;marker=10.493049%2C-66.854970" 
                         loading="lazy">
                     </iframe>
-
                 </div>
             </div>
         </section>
 
-        <!-- 4. SECCIÓN REDES SOCIALES -->
-<section class="space-y-4" id="redes">
-    <div class="text-center space-y-1">
-        <span class="text-xs uppercase tracking-widest text-sage-600 font-bold">Comunidad & Divulgación</span>
-        <h3 class="font-serif text-2xl font-bold text-stone-800">Contenido en Redes Sociales</h3>
-        <p class="text-stone-500 text-xs sm:text-sm">Publicaciones actualizadas directamente desde Instagram y TikTok.</p>
-    </div>
+        <!-- 4. SECCIÓN REDES SOCIALES (CARRUSEL + TARJETAS DE ENLACE) -->
+        <section class="space-y-6" id="redes">
+            <div class="text-center space-y-1">
+                <span class="text-xs uppercase tracking-widest text-sage-600 font-bold">Comunidad & Divulgación</span>
+                <h3 class="font-serif text-2xl font-bold text-stone-800">Contenido en Redes Sociales</h3>
+                <p class="text-stone-500 text-xs sm:text-sm">Explora las publicaciones recientes y conéctate con los canales oficiales.</p>
+            </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-        <!-- Instagram Card -->
-        <div class="bg-white rounded-3xl p-5 border border-stone-200/80 shadow-sm flex flex-col justify-between space-y-4 hover:border-pink-300 transition">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2.5">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5">
-                        <div class="w-full h-full bg-white rounded-full p-0.5">
-                            <img src="perfil.jpg" class="w-full h-full rounded-full object-cover" alt="Instagram Avatar">
+            <!-- Carrusel de Instagram -->
+            <div class="bg-white rounded-3xl p-5 sm:p-6 border border-stone-200/80 shadow-sm space-y-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5">
+                            <div class="w-full h-full bg-white rounded-full p-0.5">
+                                <img src="perfil.jpg" class="w-full h-full rounded-full object-cover" alt="Instagram Avatar">
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psicoyiyigranados</h4>
+                            <p class="text-[11px] text-stone-400">Instagram Feed</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psicoyiyigranados</h4>
-                        <p class="text-[11px] text-stone-400">Instagram Oficial</p>
+                    <a href="https://www.instagram.com/psicoyiyigranados" target="_blank" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-rose-500 to-purple-600 text-white text-xs px-4 py-2 rounded-full font-medium shadow-sm hover:opacity-90 transition">
+                        <i class="ph-bold ph-instagram-logo text-sm"></i> Seguir en Instagram
+                    </a>
+                </div>
+
+                <div class="flex gap-4 overflow-x-auto pb-3 pt-1 hide-scrollbar snap-x snap-mandatory">
+                    <div class="flex-shrink-0 w-[300px] sm:w-[340px] snap-center bg-stone-50 rounded-2xl p-3 border border-stone-100 flex flex-col justify-between">
+                        <div class="overflow-hidden rounded-xl bg-white flex justify-center">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/psicoyiyigranados/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; margin:0; max-width:540px; min-width:280px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+                        </div>
                     </div>
                 </div>
-                <a href="https://www.instagram.com/psicoyiyigranados" target="_blank" class="bg-gradient-to-r from-rose-500 to-purple-600 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm hover:opacity-90 transition">
-                    Seguir
-                </a>
+                <p class="text-[11px] text-stone-400 text-center italic">Desliza para ver más publicaciones</p>
             </div>
 
-            <div class="flex justify-center overflow-hidden rounded-2xl bg-stone-50">
-                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/psicoyiyigranados/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; margin:0; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-            </div>
-        </div>
-
-        <!-- TikTok Card (Tarjeta Interactiva Directa) -->
-        <div class="bg-white rounded-3xl p-5 border border-stone-200/80 shadow-sm flex flex-col justify-between space-y-4 hover:border-stone-800 transition">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2.5">
-                    <div class="w-10 h-10 rounded-full bg-stone-900 text-white flex items-center justify-center font-bold text-lg">
-                        <i class="ph-bold ph-tiktok-logo"></i>
+            <!-- Botones de Enlace Rápido para Redes -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://www.instagram.com/psicoyiyigranados" target="_blank" class="group bg-white hover:bg-stone-50 border border-stone-200/80 p-4 rounded-2xl shadow-sm flex items-center justify-between transition">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition">
+                            <i class="ph-bold ph-instagram-logo"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-800 text-sm">Instagram Oficial</h4>
+                            <p class="text-xs text-stone-500">@psicoyiyigranados</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-xs sm:text-sm text-stone-800">@psicoyiyigranados</h4>
-                        <p class="text-[11px] text-stone-400">TikTok Oficial</p>
+                    <span class="text-xs font-semibold text-rose-600 group-hover:translate-x-1 transition flex items-center gap-1">
+                        Visitar <i class="ph-bold ph-arrow-right"></i>
+                    </span>
+                </a>
+
+                <a href="https://www.tiktok.com/@psicoyiyigranados" target="_blank" class="group bg-white hover:bg-stone-50 border border-stone-200/80 p-4 rounded-2xl shadow-sm flex items-center justify-between transition">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-stone-900 text-white flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition">
+                            <i class="ph-bold ph-tiktok-logo"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-800 text-sm">TikTok Oficial</h4>
+                            <p class="text-xs text-stone-500">@psicoyiyigranados</p>
+                        </div>
                     </div>
-                </div>
-                <a href="https://www.tiktok.com/@psicoyiyigranados" target="_blank" class="bg-stone-900 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm hover:bg-stone-800 transition">
-                    Seguir
+                    <span class="text-xs font-semibold text-stone-900 group-hover:translate-x-1 transition flex items-center gap-1">
+                        Visitar <i class="ph-bold ph-arrow-right"></i>
+                    </span>
                 </a>
             </div>
-
-            <div class="flex flex-col items-center justify-center text-center p-8 bg-stone-900 rounded-2xl text-white space-y-4 my-auto relative overflow-hidden shadow-inner min-h-[320px]">
-                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                <div class="w-16 h-16 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center text-3xl shadow-md z-10">
-                    <i class="ph-bold ph-tiktok-logo text-pink-500"></i>
-                </div>
-                <div class="z-10 space-y-1">
-                    <h4 class="font-serif font-bold text-lg">Último Reel en TikTok</h4>
-                    <p class="text-xs text-stone-400 max-w-xs mx-auto">Explora reflexiones sobre psicología clínica, gestión de ansiedad y bienestar mental.</p>
-                </div>
-                <a href="https://www.tiktok.com/@psicoyiyigranados/video/7703623442758667541" target="_blank" class="z-10 inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-xl text-xs font-semibold shadow-lg transition transform active:scale-95">
-                    <i class="ph-bold ph-play-circle text-base"></i> Ver Video Destacado
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+        </section>
 
     </main>
 
